@@ -1,0 +1,87 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background-color: #EEE;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.872rem;
+    margin: 5rem 0;
+    line-height: 1.5em;
+}
+
+.center {
+    text-align: center;
+}
+
+.light {
+    color:rgb(78, 76, 76);
+}
+
+header {
+    margin-top: 3rem;
+}
+
+figure {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: #FFF;
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+}
+
+li {
+    margin: 1.25em 0;
+    line-height: 2em;
+}
+
+.year {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 0 0 0 10px;
+    font-style: oblique;
+    line-height: 1.5em;
+}
+cite {
+    margin-top: 1.5em;
+    display: block;
+}
+
+section:last-of-type {
+    font-weight: bold;
+    font-size: 1.872rem;
+    text-align: center;
+    line-height: 1.75em;
+    margin: 2em auto;
+}
