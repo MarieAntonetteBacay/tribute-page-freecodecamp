@@ -2,30 +2,40 @@
     box-sizing: border-box;
 }
 
+:root {
+    --font-size-1: 3.2rem;
+    --font-size-2: 1.872rem;
+    --font-size-3: 1.6rem;
+}
+
 html {
     font-size: 62.5%;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: var(--font-size-3);
     background-color: #EEE;
 }
 
 img {
     max-width: 100%;
-    margin-bottom: 2rem;
+    margin: 2rem auto;
 }
 
 h1 {
-    font-size: 3.2rem;
+    font-size: var(--font-size-1);
     font-weight: 800;
     margin-bottom: 1.5rem;
 }
 
 h2 {
-    font-size: 1.872rem;
+    font-size: var(--font-size-2);
     margin: 5rem 0;
+}
+
+h2,
+blockquote {
     line-height: 1.5em;
 }
 
@@ -42,36 +52,38 @@ header {
 }
 
 figure {
-    margin: 2rem 0;
-    padding: 1.5rem;
+    margin: 2rem auto;
+    padding: 5%;
     background-color: #FFF;
 }
 
 .container {
-    display: block;
     margin: 0 auto;
     width: 85%;
 }
 
 ul {
-    margin: 0;
+    display: block;
     padding: 0;
     list-style-position: inside;
+    margin: 0 auto;
+    max-width: 600px;
 }
+
 
 li {
     margin: 1.25em 0;
     line-height: 2em;
 }
 
-.year {
+.year,
+section:last-of-type {
     font-weight: bold;
 }
 
 blockquote {
     margin: 0 0 0 10px;
     font-style: oblique;
-    line-height: 1.5em;
 }
 cite {
     margin-top: 1.5em;
@@ -79,9 +91,38 @@ cite {
 }
 
 section:last-of-type {
-    font-weight: bold;
-    font-size: 1.872rem;
-    text-align: center;
+    font-size: var(--font-size-2);
     line-height: 1.75em;
     margin: 2em auto;
+}
+
+@media (min-width: 425px) {
+
+    :root {
+        background-color: #FFF;
+        --font-size-1: 4rem;
+    }
+
+    body {
+        background-color: #EEE;
+        padding: .83em 0;
+        margin: 3rem 1rem;
+        border-radius: 5px;
+    }
+
+}
+
+@media (min-width: 600px) {
+    blockquote {
+        margin: 0 auto;
+        padding-left: 10px;
+        max-width: 600px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    figure {
+        padding: 5%;
+    }
 }
